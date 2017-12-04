@@ -1,0 +1,16 @@
+<%= form_for @post do |form| %>
+<table>
+  <tbody>
+    <tr>
+      <td><%= form.label :title %></td>
+      <td><%= form.text_field :title %></td>
+    </tr>
+
+    <tr>
+      <td><%= form.label :text %></td>
+      <td><%= form.text_area :text %></td>
+    </tr>
+</tbody>
+</table>
+<%= form.submit "Save" %>
+<% end %>
